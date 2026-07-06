@@ -36,6 +36,12 @@ Using Recency, Frequency, and Monetary value, customers were scored and grouped 
 
 This identifies not just *who* the best customers are, but a specific **"At Risk"** segment — high-value customers who haven't ordered recently — as a concrete win-back target.
 
+## Machine learning: K-Means clustering (an alternative view)
+
+To validate the rule-based RFM segments against a data-driven approach, the same Recency/Frequency/Monetary features were also clustered using **K-Means**. Rather than confirming a generic pattern, K-Means isolated something the quartile method blurred: a **2-customer cluster generating ~$783K in revenue per customer** — roughly 7–12x the per-customer revenue of every other cluster — pointing to a small number of extreme-value accounts worth individualized account management.
+
+![K-Means clusters](images/kmeans_clusters.png)
+
 ## Sample visualizations
 
 <table>
@@ -58,12 +64,14 @@ More charts (product line performance, top customers, deal size, order status, p
 3. **Time-series analysis** — monthly sales trend to identify seasonality.
 4. **Pricing analysis** — average discount off MSRP by product line.
 5. **Customer segmentation (RFM)** — quartile-based scoring on Recency, Frequency, and Monetary value, grouped into segments (Champions, Loyal Customers, Potential Loyalists, At Risk, Needs Attention) with a recommended action for each.
+6. **K-Means clustering** — an unsupervised machine learning cross-check on the same RFM features (scaled with `StandardScaler`, k chosen via the elbow method), used to validate the manual segments and surface finer-grained structure among high-value accounts.
 
 ## Tools
 
 - Python
 - Pandas
 - Matplotlib
+- scikit-learn
 - Jupyter Notebook
 
 ## Project structure

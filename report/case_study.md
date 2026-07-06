@@ -57,6 +57,14 @@ The result: **21 customers (23% of the customer base) — the "Champions" segmen
 - Run a targeted win-back campaign on the 3 At-Risk accounts before they're gone entirely — the cost of retention here is almost certainly lower than the value at stake.
 - Use lower-touch marketing (email, self-serve) for the "Needs Attention" segment rather than expensive account-management time.
 
+## 4b. A machine-learning cross-check confirms the segments — and finds an even sharper distinction
+
+The RFM segments above were built with rules I chose by hand (score thresholds). To check whether those thresholds reflect real structure in the data rather than an arbitrary cutoff, the same customer data was also clustered with **K-Means**, an unsupervised algorithm that groups customers by similarity without any predefined rules.
+
+The result confirms the overall pattern, but also surfaces something the quartile method blurs together: a cluster of just **2 customers** generating roughly **$783K in revenue per customer** — 7 to 12 times the per-customer revenue of every other group. The quartile method's 21-customer "Champions" segment is directionally correct, but folds these two extreme accounts in with materially smaller (if still valuable) customers.
+
+**Implication:** the 2 highest-value accounts likely warrant dedicated, named account management distinct from the broader Champions program — a level of resolution the rule-based segmentation alone doesn't surface.
+
 ## 5. No single lever dominates revenue — but deal count matters more than deal size
 
 A correlation analysis between order quantity, unit price, revenue, and MSRP shows all three inputs have a moderate relationship with per-line revenue: **unit price** (0.66) and **product tier / MSRP** (0.64) correlate slightly more strongly with revenue than **quantity ordered** (0.55) does. In other words, *which* product and price tier is sold explains a bit more of the swing in line-item revenue than *how many units* are ordered — though the gap isn't large enough to call any one factor dominant.
@@ -83,6 +91,6 @@ Average discount off MSRP ranges from **19% on Classic Cars** down to a **-5% "p
 
 ## Methodology note
 
-This analysis used Python (Pandas for data manipulation, Matplotlib for visualization) on a dataset of 2,823 order lines. Data cleaning addressed a character-encoding issue in the source file and confirmed no duplicate records. The RFM model used quartile-based scoring, a standard and interpretable approach appropriate for a dataset of this size; a larger dataset or one with more purchase history could support a more granular or model-based segmentation (e.g., k-means clustering on RFM features).
+This analysis used Python (Pandas for data manipulation, Matplotlib for visualization, scikit-learn for clustering) on a dataset of 2,823 order lines. Data cleaning addressed a character-encoding issue in the source file and confirmed no duplicate records. The RFM model used quartile-based scoring, a standard and interpretable approach appropriate for a dataset of this size, and was cross-checked against a K-Means clustering model (features scaled, k selected via the elbow method) to confirm the segments reflect genuine structure in the data rather than arbitrary thresholds.
 
 The full code, statistics, and all charts are available in the [analysis notebook](../notebooks/sales_analysis.ipynb).
