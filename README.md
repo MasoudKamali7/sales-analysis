@@ -84,7 +84,7 @@ sales-analysis/
 ## Running this project locally
 
 ```bash
-git clone https://github.com/<your-username>/sales-analysis.git
+git clone https://github.com/MasoudKamali7/sales-analysis.git
 cd sales-analysis
 pip install -r requirements.txt
 jupyter notebook notebooks/sales_analysis.ipynb
@@ -97,4 +97,4 @@ The dataset is a publicly available sample sales dataset for a wholesale scale-m
 ## Author
 
 **Masoud Kamali**
-[LinkedIn](#) · [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/masoud-kamali-500958386/) · [GitHub](https://github.com/MasoudKamali7)
