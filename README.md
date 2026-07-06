@@ -1,6 +1,6 @@
 # Sales Performance Analysis — A Business Analytics Case Study
 
-A end-to-end analysis of two years of transactional sales data (2003–2005) from a wholesale scale-model vehicle distributor, built to answer one question a manager actually asks: **where is revenue coming from, and where should we focus attention next?**
+An end-to-end analysis of two years of transactional sales data (2003–2005) from a wholesale scale-model vehicle distributor, built to answer one question a manager actually asks: **where is revenue coming from, and where should we focus attention next?**
 
 The project moves beyond simple descriptive charts into a customer-value segmentation model (RFM), and every finding is translated into a specific business recommendation.
 

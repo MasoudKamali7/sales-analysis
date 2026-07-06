@@ -57,11 +57,13 @@ The result: **21 customers (23% of the customer base) — the "Champions" segmen
 - Run a targeted win-back campaign on the 3 At-Risk accounts before they're gone entirely — the cost of retention here is almost certainly lower than the value at stake.
 - Use lower-touch marketing (email, self-serve) for the "Needs Attention" segment rather than expensive account-management time.
 
-## 5. Revenue is a volume story, not a pricing story
+## 5. No single lever dominates revenue — but deal count matters more than deal size
 
-A correlation analysis between order quantity, unit price, revenue, and MSRP shows that revenue per order line correlates more strongly with **quantity ordered** (0.55) than with **unit price** (0.66 — actually comparable, worth noting both are meaningful, but quantity has a more direct operational lever). Deal-size analysis reinforces this: **medium-sized deals**, not large contracts, generate the most total revenue ($6.1M vs. $1.3M from large deals).
+A correlation analysis between order quantity, unit price, revenue, and MSRP shows all three inputs have a moderate relationship with per-line revenue: **unit price** (0.66) and **product tier / MSRP** (0.64) correlate slightly more strongly with revenue than **quantity ordered** (0.55) does. In other words, *which* product and price tier is sold explains a bit more of the swing in line-item revenue than *how many units* are ordered — though the gap isn't large enough to call any one factor dominant.
 
-**Implication:** the business is fundamentally a volume business. Promotions and campaigns that increase order quantity are likely to move revenue more reliably than price increases, and sales strategy should be built around growing the number of mid-sized transactions rather than chasing a small number of whale deals.
+The deal-size breakdown tells a clearer story: **medium-sized deals**, not large contracts, generate the most total revenue ($6.1M vs. $1.3M from large deals).
+
+**Implication:** this isn't a business defined by a handful of whale deals — the bulk of revenue comes from a high volume of mid-sized transactions, which supports investing in the number and cadence of mid-sized deals over chasing a small number of large ones. Pricing strategy shouldn't be sidelined either: since price/tier correlates just as strongly with revenue as quantity does, testing discount depth (see Finding 6) is at least as promising a lever as volume-driving promotions.
 
 ## 6. Pricing discipline varies by product line
 
